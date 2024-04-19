@@ -7,7 +7,7 @@ directory_path = 'D:\\lrc (2)'
 def remove_zwnbsp(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
-    content = content.replace('\u200B', '')
+    content = content.replace('\u200b', '')
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(content)
 
